@@ -1,0 +1,5 @@
+<h1><%= @hospital.name %></h1>
+<h2>Doctors:</h2>
+<% @hospital.get_doctors_by_patient_count.each do |doctor| %>
+  <h3><%= doctor.name %> - Patient Count: <%= doctor.patient_count %> </h3>
+<% end %>
