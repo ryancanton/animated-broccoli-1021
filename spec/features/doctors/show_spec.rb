@@ -47,13 +47,3 @@ RSpec.describe "A Doctor Show Page" do
     expect(page).to have_content(pat_1.name)
   end
 end
-
-
-# As a visitor
-# When I visit a Doctor's show page
-# Then next to each patient's name, I see a button to remove that patient from that doctor's caseload
-# When I click that button for one patient
-# I'm brought back to the Doctor's show page
-# And I no longer see that patient's name listed
-# And when I visit a different doctor's show page that is caring for the same patient,
-# Then I see that the patient is still on the other doctor's caseload
