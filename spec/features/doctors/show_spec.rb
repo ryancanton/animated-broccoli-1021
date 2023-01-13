@@ -19,7 +19,7 @@ RSpec.describe "A Doctor Show Page" do
     pat_2 = doc_1.patients.create!(name: "Billy", age: 43)
     pat_3 = doc_1.patients.create!(name: "Kyle", age: 12)
     pat_4 = doc_2.patients.create!(name: "Jill", age: 21)
-    DoctorPatient.create!(doctor_id: doc_2.id, patient_id: pat_3.id)
+    PatientDoctor.create!(doctor_id: doc_2.id, patient_id: pat_3.id)
 
     visit doctor_path(doc_1.id)
 
